@@ -6,7 +6,7 @@ Instead of scrolling through a timeline, visitors press **PLAY** and watch Bitco
 
 ---
 
-## 🎯 What This Project Is
+## What This Project Is
 
 Bitcoin Memories is a creative frontend + Python project built for learning and portfolio purposes.
 
@@ -20,7 +20,7 @@ This project focuses on:
 
 ---
 
-## 👩🏽‍💻 Who This Project Is For
+## Who This Project Is For
 
 This project is for:
 - Bitcoin beginners who want a fun way to learn history  
@@ -32,7 +32,7 @@ This project is for:
 ## 🛠 Tech Stack
 
 **Frontend**
-- React
+- React 
 - JavaScript
 - CSS animations & VHS effects
 
@@ -46,9 +46,15 @@ The site is fully static and does not require a backend server.
 
 ## 👩🏽‍💻 Author
 
-Built by **Grace Mugoiri**
+| Name | Role |
+|------|------|
+| [Grace Mugoiri](https://github.com/grace-mugoiri) | Developer |
 
 This project was created as part of my learning journey combining Bitcoin education, Python and frontend development.
+
+## License
+
+MIT
 
 ---
 
@@ -73,7 +79,3 @@ Example of the VHS memory album experience:
 > The experience ends with: **THE TAPE IS STILL RECORDING**
 
 ---
-
-## ❤️ Note
-
-This project was built for learning, creativity and experimentation.
