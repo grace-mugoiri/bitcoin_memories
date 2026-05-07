@@ -1,0 +1,154 @@
+/* Sidebar Styles */
+
+.sidebar {
+    width: 280px;
+    background: linear-gradient(to right, #111, #1e1e1e);
+    border-right: 1px solid #555;
+    color: #e8e8e8;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.sidebar-header {
+    padding: 0 1.5rem 2rem;
+    border-bottom: 1px dashed #555;
+    margin-bottom: 2rem;
+}
+
+.sidebar-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 0.5rem;
+    color: #f7941d;
+    text-shadow: 0 0 8px rgba(247, 148, 29, 0.15);
+    line-height: 1.2;
+}
+
+.bitcoin-logo {
+    font-size: 1.8rem;
+    color: #ccc;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.12);
+    margin-left: 0.5rem;
+}
+
+.sidebar-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+    letter-spacing: 1px;
+}
+
+.sidebar-tagline {
+    font-size: 0.75rem;
+    color: #bbb;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+    margin: 0.8rem 0 0;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+.playlist-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 1rem;
+}
+
+.playlist-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0.5rem;
+    letter-spacing: 1px;
+    color: #ddd;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.playlist-item {
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    border-radius: 2px;
+}
+
+.playlist-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: #aaa;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.playlist-item.active {
+    background: rgba(255, 255, 255, 0.14);
+    border-left-color: #ddd;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.item-number {
+    font-weight: bold;
+    min-width: 2rem;
+    color: #ff8c00;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.item-date {
+    color: #aaa;
+    font-size: 0.75rem;
+}
+
+.item-title {
+    color: #eee;
+    font-weight: bold;
+}
+
+.sidebar-footer {
+    border-top: 1px dashed #555;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.memory-count {
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.vhs-label {
+    background: linear-gradient(135deg, #4a4a4a, #2e2e2e);
+    border: 1px solid #888;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #eee;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.08);
+}
+
+/* Scrollbar styling */
+.playlist-section::-webkit-scrollbar {
+    width: 6px;
+}
+
+.playlist-section::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.playlist-section::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 3px;
+}
