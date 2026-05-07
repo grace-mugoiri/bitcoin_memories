@@ -2,24 +2,24 @@
 
 .main-screen {
     flex: 1;
-    background: #121212;
+    background: #050505;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     gap: 1rem;
-    border: 1px solid #555;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05);
+    border: 1px solid #000;
+    box-shadow: inset 0 0 24px rgba(255, 255, 255, 0.05);
 }
 
 .screen-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #eee;
+    color: #e8e8e8;
     font-family: 'Courier New', monospace;
     padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(11, 19, 32, 0.75);
+    border: 1px solid rgba(58, 168, 255, 0.18);
     border-radius: 2px;
 }
 
@@ -35,19 +35,19 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #f00;
+    background: #ff3b3b;
     border-radius: 50%;
     animation: pulse 0.5s infinite alternate;
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.4);
 }
 
 @keyframes pulse {
     from {
-        box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+        box-shadow: 0 0 10px rgba(255, 59, 59, 0.4);
     }
 
     to {
-        box-shadow: 0 0 2px rgba(255, 0, 0, 0.4);
+        box-shadow: 0 0 2px rgba(255, 59, 59, 0.4);
     }
 }
 
@@ -56,20 +56,22 @@
     font-size: 0.85rem;
     letter-spacing: 1px;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.18);
+    color: #9aa3ad;
 }
 
 .timestamp {
     font-size: 1rem;
     font-weight: bold;
+    color: #e8e8e8;
 }
 
 .screen-video {
     flex: 1;
-    background: #101010;
+    background: #0b1320;
     position: relative;
-    border: 2px solid #333;
+    border: 2px solid #000;
     overflow: hidden;
-    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,13 +108,13 @@
 .image-placeholder {
     width: 60%;
     aspect-ratio: 1.5;
-    background: #161616;
-    border: 2px solid #666;
+    background: #0b1320;
+    border: 2px solid #3aa8ff;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #999;
+    color: #9aa3ad;
     font-size: 0.95rem;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
     overflow: hidden;
@@ -128,7 +130,7 @@
 .placeholder-text {
     padding: 1rem;
     text-align: center;
-    color: #999;
+    color: #9aa3ad;
     font-style: italic;
 }
 
@@ -140,7 +142,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    color: #eee;
+    color: #e8e8e8;
 }
 
 .video-banner {
@@ -152,16 +154,16 @@
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 0.6rem 0;
-    background: rgba(0, 0, 0, 0.7);
-    border-bottom: 1px solid #888;
+    background: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid rgba(58, 168, 255, 0.25);
 }
 
 .video-frame {
     width: 90%;
     height: 60%;
-    background: linear-gradient(135deg, #2a2a2a 0%, #111 100%);
-    border: 1px solid #888;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+    background: linear-gradient(135deg, #0b1320 0%, #050505 100%);
+    border: 1px solid #3aa8ff;
+    box-shadow: inset 0 0 18px rgba(58, 168, 255, 0.12);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,27 +176,27 @@
     position: absolute;
     width: 120%;
     height: 120%;
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.03), transparent 35%);
-    opacity: 0.5;
+    background: radial-gradient(circle at center, rgba(58, 168, 255, 0.05), transparent 35%);
+    opacity: 0.45;
 }
 
 .video-play-icon {
     position: relative;
     font-size: 3rem;
-    color: #ddd;
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+    color: #e8e8e8;
+    text-shadow: 0 0 12px rgba(58, 168, 255, 0.3);
 }
 
 .video-caption {
     font-size: 0.85rem;
     text-align: center;
-    color: #ccc;
+    color: #9aa3ad;
     max-width: 90%;
 }
 
 .video-overlay {
     text-align: center;
-    color: #f1f1f1;
+    color: #e8e8e8;
     font-family: 'Courier New', monospace;
 }
 
@@ -202,8 +204,8 @@
     font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
-    color: #f69d2f;
-    text-shadow: 0 0 12px rgba(246, 157, 47, 0.2);
+    color: #3aa8ff;
+    text-shadow: 0 0 14px rgba(58, 168, 255, 0.24);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -211,8 +213,8 @@
 .video-description {
     font-size: 0.95rem;
     margin: 0.5rem 0 0;
-    color: #ccc;
-    text-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+    color: #9aa3ad;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.12);
     font-style: italic;
 }
 
@@ -224,25 +226,27 @@
     align-items: center;
     gap: 0.8rem;
     font-size: 0.8rem;
-    color: #ddd;
+    color: #9aa3ad;
 }
 
 .sp-label {
     font-weight: bold;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 255, 156, 0.4);
     padding: 0.3rem 0.6rem;
     border-radius: 2px;
+    color: #00ff9c;
 }
 
 .tracking-label {
     font-weight: bold;
+    color: #e8e8e8;
 }
 
 .tracking-bar {
     width: 100px;
     height: 3px;
-    background: linear-gradient(90deg, #ccc, #999, #ccc);
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.12);
+    background: linear-gradient(90deg, #00ff9c, #3aa8ff, #00ff9c);
+    box-shadow: 0 0 6px rgba(0, 255, 156, 0.25);
 }
 
 .screen-footer {
@@ -250,12 +254,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 19, 32, 0.75);
+    border: 1px solid rgba(58, 168, 255, 0.15);
     border-radius: 2px;
     font-family: 'Courier New', monospace;
     font-size: 0.85rem;
-    color: #eee;
+    color: #e8e8e8;
 }
 
 .counter-display {

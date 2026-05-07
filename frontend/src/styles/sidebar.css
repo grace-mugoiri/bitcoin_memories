@@ -2,19 +2,19 @@
 
 .sidebar {
     width: 280px;
-    background: linear-gradient(to right, #111, #1e1e1e);
-    border-right: 1px solid #555;
+    background: linear-gradient(to right, #050505, #0b1320);
+    border-right: 1px solid #000;
     color: #e8e8e8;
     font-family: 'Courier New', monospace;
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
-    box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: inset -10px 0 24px rgba(0, 0, 0, 0.85);
 }
 
 .sidebar-header {
     padding: 0 1.5rem 2rem;
-    border-bottom: 1px dashed #555;
+    border-bottom: 1px dashed rgba(154, 163, 173, 0.36);
     margin-bottom: 2rem;
 }
 
@@ -23,15 +23,15 @@
     font-weight: bold;
     letter-spacing: 2px;
     margin: 0 0 0.5rem;
-    color: #f7941d;
-    text-shadow: 0 0 8px rgba(247, 148, 29, 0.15);
+    color: #ffd84d;
+    text-shadow: 0 0 10px rgba(255, 216, 77, 0.25);
     line-height: 1.2;
 }
 
 .bitcoin-logo {
     font-size: 1.8rem;
-    color: #ccc;
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.12);
+    color: #3aa8ff;
+    text-shadow: 0 0 6px rgba(58, 168, 255, 0.25);
     margin-left: 0.5rem;
 }
 
@@ -40,12 +40,13 @@
     font-weight: bold;
     margin: 0.3rem 0;
     letter-spacing: 1px;
+    color: #e8e8e8;
 }
 
 .sidebar-tagline {
     font-size: 0.75rem;
-    color: #bbb;
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+    color: #9aa3ad;
+    text-shadow: 0 0 4px rgba(154, 163, 173, 0.12);
     margin: 0.8rem 0 0;
     line-height: 1.3;
     letter-spacing: 0.5px;
@@ -62,7 +63,7 @@
     font-weight: bold;
     margin: 0 0 1rem 0.5rem;
     letter-spacing: 1px;
-    color: #ddd;
+    color: #9aa3ad;
 }
 
 .playlist {
@@ -77,26 +78,26 @@
     padding: 0.6rem 0.8rem;
     cursor: pointer;
     border-left: 3px solid transparent;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
     border-radius: 2px;
 }
 
 .playlist-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-left-color: #aaa;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    background: rgba(58, 168, 255, 0.08);
+    border-left-color: #3aa8ff;
+    box-shadow: 0 0 10px rgba(58, 168, 255, 0.12);
 }
 
 .playlist-item.active {
-    background: rgba(255, 255, 255, 0.14);
-    border-left-color: #ddd;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+    background: rgba(0, 255, 156, 0.12);
+    border-left-color: #00ff9c;
+    box-shadow: 0 0 14px rgba(0, 255, 156, 0.18);
 }
 
 .item-number {
     font-weight: bold;
     min-width: 2rem;
-    color: #ff8c00;
+    color: #ffd84d;
 }
 
 .item-details {
@@ -106,17 +107,17 @@
 }
 
 .item-date {
-    color: #aaa;
+    color: #9aa3ad;
     font-size: 0.75rem;
 }
 
 .item-title {
-    color: #eee;
+    color: #e8e8e8;
     font-weight: bold;
 }
 
 .sidebar-footer {
-    border-top: 1px dashed #555;
+    border-top: 1px dashed rgba(154, 163, 173, 0.36);
     padding: 1.5rem;
     text-align: center;
 }
@@ -129,14 +130,14 @@
 }
 
 .vhs-label {
-    background: linear-gradient(135deg, #4a4a4a, #2e2e2e);
-    border: 1px solid #888;
+    background: linear-gradient(135deg, #0b1320, #050505);
+    border: 1px solid #3aa8ff;
     padding: 0.4rem 0.8rem;
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 2px;
-    color: #eee;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.08);
+    color: #e8e8e8;
+    box-shadow: 0 0 10px rgba(58, 168, 255, 0.12);
 }
 
 /* Scrollbar styling */
@@ -145,10 +146,10 @@
 }
 
 .playlist-section::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .playlist-section::-webkit-scrollbar-thumb {
-    background: #777;
+    background: rgba(154, 163, 173, 0.35);
     border-radius: 3px;
 }
