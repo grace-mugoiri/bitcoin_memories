@@ -139,7 +139,7 @@ const MainScreen = ({ memory, currentIndex, totalMemories, isPlaying }) => {
                 </div>
                 <div className="duration-display">
                     <span>DURATION</span>
-                    <span className="duration-time">~ 45 MIN</span>
+                    <span className="duration-time">~ 4 MIN</span>
                 </div>
             </div>
         </div>

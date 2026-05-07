@@ -6,7 +6,7 @@ const Sidebar = ({ memories, currentIndex, onSelectMemory }) => {
         <div className="sidebar">
             <div className="sidebar-header">
                 <h1 className="sidebar-title">
-                    BITCOIN <span className="bitcoin-logo">₿</span>
+                    BITCOIN <span className="bitcoin-logo"></span>
                 </h1>
                 <h2 className="sidebar-subtitle">MEMORIES</h2>
                 <p className="sidebar-tagline">AN ALBUM OF MOMENTS<br />THAT CHANGED MONEY</p>
@@ -25,7 +25,6 @@ const Sidebar = ({ memories, currentIndex, onSelectMemory }) => {
                             <div className="item-details">
                                 <span className="item-date">{memory.date}</span>
                                 <span className="item-title">{memory.title}</span>
-                                {memory.caption && <span className="item-caption">{memory.caption}</span>}
                             </div>
                         </div>
                     ))}

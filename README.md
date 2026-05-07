@@ -1,9 +1,79 @@
-# Bitcoin Memories
+# 📼 Bitcoin Memories
 
-A VHS-themed memory album application.
+A VHS-themed storytelling website that presents the history of Bitcoin as a nostalgic video album.
 
-## Structure
+Instead of scrolling through a timeline, visitors press **PLAY** and watch Bitcoin’s journey unfold like an old tape recording.
 
-- `frontend/`: React application with VHS UI
-- `content/`: Python scripts for memory building
-- `dist/`: Generated JSON output
+---
+
+## 🎯 What This Project Is
+
+Bitcoin Memories is a creative frontend + Python project built for learning and portfolio purposes.
+
+The goal was to turn Bitcoin history into an **interactive visual story** using retro VHS aesthetics, cinematic transitions and narrative scripts.
+
+This project focuses on:
+- storytelling through UI
+- creative animations
+- structuring content using Python
+- building a complete mini product from idea → design → code
+
+---
+
+## 👩🏽‍💻 Who This Project Is For
+
+This project is for:
+- Bitcoin beginners who want a fun way to learn history  
+- Developers exploring creative frontend ideas  
+- Anyone who enjoys storytelling through design  
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- React
+- JavaScript
+- CSS animations & VHS effects
+
+**Content Pipeline**
+- Python
+- JSON generation
+
+The site is fully static and does not require a backend server.
+
+---
+
+## 👩🏽‍💻 Author
+
+Built by **Grace Mugoiri**
+
+This project was created as part of my learning journey combining Bitcoin education, Python and frontend development.
+
+---
+
+## 🌐 Live Website
+
+Link will be added after deployment:
+
+**Live Demo:**  
+`https://your-live-link.com`
+
+---
+
+## 🖼 Website Preview
+
+Example of the VHS memory album experience:
+
+- VHS overlays and film grain  
+- Tape rewind / fast-forward transitions  
+- Narrative captions for every milestone  
+- Chronological “memory album” of Bitcoin  
+
+> The experience ends with: **THE TAPE IS STILL RECORDING**
+
+---
+
+## ❤️ Note
+
+This project was built for learning, creativity and experimentation.
