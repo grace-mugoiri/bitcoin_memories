@@ -1,16 +1,137 @@
 [
   {
     "id": 1,
+    "date": "2009-01-03",
+    "title": "Genesis Block",
+    "caption": "Satoshi Nakamoto creates the first Bitcoin block",
+    "image": "genesis.jpg"
+  },
+  {
+    "id": 2,
     "date": "2009-01-11",
     "title": "Running Bitcoin",
     "caption": "Hal Finney tweets 'Running bitcoin'",
     "image": "hal-finney.png"
   },
   {
-    "id": 2,
+    "id": 3,
+    "date": "2009-01-12",
+    "title": "First Bitcoin Transaction",
+    "caption": "Satoshi sends 10 BTC to Hal Finney",
+    "image": "first-tx.jpg"
+  },
+  {
+    "id": 4,
     "date": "2010-05-22",
     "title": "Bitcoin Pizza Day",
-    "caption": "10,000 BTC for two pizzas",
-    "image": "pizza.jpg"
+    "caption": "Laszlo pays 10,000 BTC for two pizzas",
+    "image": "pizza.jpg",
+    "mediaType": "video",
+    "mediaSrc": "pizza-day-demo.mp4",
+    "script": [
+      "BITCOIN PIZZA DAY",
+      "10,000 BTC for two pizzas.",
+      "Bitcoin becomes real money for the first time.",
+      "The first real-world trade.",
+      "Narrative: someone pressed record."
+    ]
+  },
+  {
+    "id": 5,
+    "date": "2011-06-08",
+    "title": "Bitcoin Reaches $1",
+    "caption": "Bitcoin achieves parity with the US dollar",
+    "image": "dollar.jpg"
+  },
+  {
+    "id": 6,
+    "date": "2012-11-28",
+    "title": "First Bitcoin Halving",
+    "caption": "Block reward reduced from 50 to 25 BTC",
+    "image": "halving.jpg"
+  },
+  {
+    "id": 7,
+    "date": "2013-10-02",
+    "title": "Silk Road Seized",
+    "caption": "FBI shuts down dark web marketplace",
+    "image": "silk-road.jpg"
+  },
+  {
+    "id": 8,
+    "date": "2013-10-29",
+    "title": "First Bitcoin ATM",
+    "caption": "Bitcoin ATM installed in Vancouver",
+    "image": "bitcoin-atm.jpg"
+  },
+  {
+    "id": 9,
+    "date": "2014-02-24",
+    "title": "Mt. Gox Collapse",
+    "caption": "Major exchange loses 850,000 bitcoins",
+    "image": "mtgox.jpg"
+  },
+  {
+    "id": 10,
+    "date": "2016-07-09",
+    "title": "Second Bitcoin Halving",
+    "caption": "Block reward reduced from 25 to 12.5 BTC",
+    "image": "halving2.jpg"
+  },
+  {
+    "id": 11,
+    "date": "2017-12-10",
+    "title": "Bitcoin Futures Launch",
+    "caption": "CME Group launches Bitcoin futures contracts",
+    "image": "futures.jpg"
+  },
+  {
+    "id": 12,
+    "date": "2017-12-17",
+    "title": "Bitcoin Hits $20k",
+    "caption": "Bitcoin reaches all-time high of nearly $20,000",
+    "image": "20k.jpg"
+  },
+  {
+    "id": 13,
+    "date": "2013-11-27",
+    "title": "The First Big Bubble",
+    "caption": "Bitcoin breaks $1,000 as media and curiosity explode.",
+    "image": "1000-bubble.jpg"
+  },
+  {
+    "id": 14,
+    "date": "2017-08-01",
+    "title": "The Civil War Ends",
+    "caption": "Bitcoin survives the block size war and forks into new paths.",
+    "image": "civil-war.jpg"
+  },
+  {
+    "id": 15,
+    "date": "2020-03-12",
+    "title": "Black Thursday",
+    "caption": "COVID panic sends Bitcoin tumbling 50% in a single day.",
+    "image": "black-thursday.jpg"
+  },
+  {
+    "id": 16,
+    "date": "2021-09-07",
+    "title": "A Country Adopts Bitcoin",
+    "caption": "El Salvador makes Bitcoin legal tender, entering geopolitics.",
+    "image": "el-salvador.jpg"
+  },
+  {
+    "id": 17,
+    "date": "2022-11-11",
+    "title": "The Industry Collapses",
+    "caption": "FTX implodes, trust in crypto shatters, Bitcoin still mines the next block.",
+    "image": "ftx.jpg"
+  },
+  {
+    "id": 18,
+    "date": "2011-02-09",
+    "title": "Parity Day",
+    "caption": "Bitcoin reaches $1 for the first time, moving from experiment to real value.",
+    "image": "parity-day.jpg"
   }
 ]

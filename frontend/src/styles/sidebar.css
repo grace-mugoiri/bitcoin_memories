@@ -1,0 +1,163 @@
+/* Sidebar Styles */
+
+.sidebar {
+    width: 280px;
+    background: linear-gradient(to right, #050505, #0b1320);
+    border-right: 1px solid #000;
+    color: #e8e8e8;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    box-shadow: inset -10px 0 24px rgba(0, 0, 0, 0.85);
+}
+
+.sidebar-header {
+    padding: 0 1.5rem 2rem;
+    border-bottom: 1px dashed rgba(154, 163, 173, 0.36);
+    margin-bottom: 2rem;
+}
+
+.sidebar-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 0.5rem;
+    color: #ffd84d;
+    text-shadow: 0 0 10px rgba(255, 216, 77, 0.25);
+    line-height: 1.2;
+}
+
+.bitcoin-logo {
+    font-size: 1.8rem;
+    color: #3aa8ff;
+    text-shadow: 0 0 6px rgba(58, 168, 255, 0.25);
+    margin-left: 0.5rem;
+}
+
+.sidebar-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.3rem 0;
+    letter-spacing: 1px;
+    color: #e8e8e8;
+}
+
+.sidebar-tagline {
+    font-size: 0.75rem;
+    color: #9aa3ad;
+    text-shadow: 0 0 4px rgba(154, 163, 173, 0.12);
+    margin: 0.8rem 0 0;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+.playlist-section {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 1rem;
+}
+
+.playlist-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0.5rem;
+    letter-spacing: 1px;
+    color: #9aa3ad;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.playlist-item {
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+
+.playlist-item:hover {
+    background: rgba(58, 168, 255, 0.08);
+    border-left-color: #3aa8ff;
+    box-shadow: 0 0 10px rgba(58, 168, 255, 0.12);
+}
+
+.playlist-item.active {
+    background: rgba(0, 255, 156, 0.12);
+    border-left-color: #00ff9c;
+    box-shadow: 0 0 14px rgba(0, 255, 156, 0.18);
+}
+
+.item-number {
+    font-weight: bold;
+    min-width: 2rem;
+    color: #ffd84d;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.item-date {
+    color: #9aa3ad;
+    font-size: 0.75rem;
+}
+
+.item-title {
+    color: #e8e8e8;
+    font-weight: bold;
+}
+
+.item-caption {
+    color: #9aa3ad;
+    font-size: 0.72rem;
+    margin-top: 0.25rem;
+    line-height: 1.3;
+    opacity: 0.9;
+}
+
+.sidebar-footer {
+    border-top: 1px dashed rgba(154, 163, 173, 0.36);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.memory-count {
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.vhs-label {
+    background: linear-gradient(135deg, #0b1320, #050505);
+    border: 1px solid #3aa8ff;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #e8e8e8;
+    box-shadow: 0 0 10px rgba(58, 168, 255, 0.12);
+}
+
+/* Scrollbar styling */
+.playlist-section::-webkit-scrollbar {
+    width: 6px;
+}
+
+.playlist-section::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.playlist-section::-webkit-scrollbar-thumb {
+    background: rgba(154, 163, 173, 0.35);
+    border-radius: 3px;
+}
