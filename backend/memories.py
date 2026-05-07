@@ -29,11 +29,11 @@ memories = [
         "mediaType": "video",
         "mediaSrc": "pizza-day-demo.mp4",
         "script": [
-            "echo 'Bitcoin Pizza Day'",
-            "echo '10,000 BTC for two pizzas.'",
-            "echo 'Bitcoin becomes real money for the first time.'",
-            "echo 'The first real-world trade.'",
-            "echo 'Narrative: someone pressed record.'"
+            "BITCOIN PIZZA DAY",
+            "10,000 BTC for two pizzas.",
+            "Bitcoin becomes real money for the first time.",
+            "The first real-world trade.",
+            "Narrative: someone pressed record."
         ]
     },
     {

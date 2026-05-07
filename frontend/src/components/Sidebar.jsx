@@ -25,6 +25,7 @@ const Sidebar = ({ memories, currentIndex, onSelectMemory }) => {
                             <div className="item-details">
                                 <span className="item-date">{memory.date}</span>
                                 <span className="item-title">{memory.title}</span>
+                                {memory.caption && <span className="item-caption">{memory.caption}</span>}
                             </div>
                         </div>
                     ))}

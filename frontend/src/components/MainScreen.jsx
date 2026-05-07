@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import '../styles/main-screen.css';
 
 const MainScreen = ({ memory, currentIndex, totalMemories, isPlaying }) => {
@@ -15,6 +15,54 @@ const MainScreen = ({ memory, currentIndex, totalMemories, isPlaying }) => {
     // Format date to display style
     const dateObj = new Date(memory.date);
     const dateStr = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }).toUpperCase();
+
+    const script = useMemo(() => {
+        if (memory.script && memory.script.length) return memory.script;
+        return [
+            `${memory.title.toUpperCase()}`,
+            `${memory.caption}`,
+            `DATE: ${dateStr}`,
+            `A defining moment in Bitcoin history.`,
+        ];
+    }, [memory, dateStr]);
+
+    const [currentLineIndex, setCurrentLineIndex] = useState(0);
+    const [currentCharIndex, setCurrentCharIndex] = useState(0);
+    const [finishedLines, setFinishedLines] = useState([]);
+
+    useEffect(() => {
+        if (isPlaying) {
+            setCurrentLineIndex(0);
+            setCurrentCharIndex(0);
+            setFinishedLines([]);
+        }
+    }, [memory.id, isPlaying]);
+
+    useEffect(() => {
+        if (!isPlaying || script.length === 0) return;
+        if (currentLineIndex >= script.length) return;
+
+        const currentLine = script[currentLineIndex];
+        let timeoutId;
+
+        if (currentCharIndex < currentLine.length) {
+            timeoutId = setTimeout(() => {
+                setCurrentCharIndex((prev) => prev + 1);
+            }, 40);
+        } else {
+            timeoutId = setTimeout(() => {
+                setFinishedLines((prev) => [...prev, currentLine]);
+                setCurrentLineIndex((prev) => prev + 1);
+                setCurrentCharIndex(0);
+            }, 900);
+        }
+
+        return () => clearTimeout(timeoutId);
+    }, [isPlaying, script, currentLineIndex, currentCharIndex]);
+
+    const typedLine = script[currentLineIndex] ? script[currentLineIndex].slice(0, currentCharIndex) : '';
+    const terminalLines = [...finishedLines, typedLine];
+    const showTerminal = isPlaying && script.length > 0;
 
     return (
         <div className="main-screen">
@@ -34,7 +82,20 @@ const MainScreen = ({ memory, currentIndex, totalMemories, isPlaying }) => {
                 <div className="scanlines"></div>
                 <div className="video-content">
                     <div className="image-placeholder">
-                        {memory.mediaType === 'video' ? (
+                        {showTerminal ? (
+                            <div className="terminal-panel">
+                                <div className="terminal-header">bash</div>
+                                <div className="terminal-lines">
+                                    {terminalLines.map((line, idx) => (
+                                        <div key={idx} className="terminal-line">{line || '\u00A0'}</div>
+                                    ))}
+                                    <div className="terminal-line terminal-cursor">
+                                        {typedLine}
+                                        <span className="cursor">█</span>
+                                    </div>
+                                </div>
+                            </div>
+                        ) : memory.mediaType === 'video' ? (
                             <div className="video-preview">
                                 <div className="video-banner">VIDEO PREVIEW</div>
                                 <div className="video-frame">
@@ -56,8 +117,12 @@ const MainScreen = ({ memory, currentIndex, totalMemories, isPlaying }) => {
                         )}
                     </div>
                     <div className="video-overlay">
-                        <h2 className="video-title">{memory.title}</h2>
-                        <p className="video-description">{memory.caption}</p>
+                        {!showTerminal && (
+                            <>
+                                <h2 className="video-title">{memory.title}</h2>
+                                <p className="video-description">{memory.caption}</p>
+                            </>
+                        )}
                     </div>
                 </div>
                 <div className="tracking-info">

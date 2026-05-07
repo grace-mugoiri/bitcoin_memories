@@ -218,6 +218,61 @@
     font-style: italic;
 }
 
+.terminal-panel {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    border: 1px solid rgba(0, 255, 156, 0.25);
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: inset 0 0 18px rgba(0, 255, 156, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.terminal-header {
+    font-size: 0.75rem;
+    color: #00ff9c;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.terminal-lines {
+    max-height: 168px;
+    overflow-y: auto;
+}
+
+.terminal-line {
+    color: #e8e8e8;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.terminal-cursor .cursor {
+    display: inline-block;
+    margin-left: 0.15rem;
+    width: 8px;
+    animation: blink 1s step-start infinite;
+    color: #00ff9c;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    50.1%,
+    100% {
+        opacity: 0;
+    }
+}
+
 .tracking-info {
     position: absolute;
     bottom: 1rem;
