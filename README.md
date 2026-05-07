@@ -68,7 +68,7 @@ Link will be added after deployment:
 ---
 
 ## 🖼 Website Preview
-![Preview Image](docs/images/Screenshot 2026-05-07 at 20.43.29.png)
+![Preview Image](docs/images/preview.png)
 
 Example of the VHS memory album experience:
 
